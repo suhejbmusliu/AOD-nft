@@ -1,0 +1,37 @@
+/*Banner style*/
+
+
+.Banner h1{
+    text-align: center;
+    font-size: 90px;
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .Banner p{
+    text-align: center;
+    color: #fff;
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 2px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    .Banner h1{
+      font-size: 30px;
+      margin-top: 170px;
+    }
+
+    .Banner p {
+      font-size: 15px;
+      padding: 0px 20px 0px 20px;
+    }
+
+  }
+

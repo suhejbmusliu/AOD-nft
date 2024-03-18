@@ -1,0 +1,63 @@
+/*ABOUT US*/
+
+.aboutus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding: 0px;
+    
+  }
+  
+  .aboutus img {
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    margin: 10px 10px 40px 10px;
+  
+  }
+  
+  .aboutus-details {
+    max-width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Syne", sans-serif;
+    font-weight: 400;
+  }
+  
+  
+  .aboutus-details p {
+    color: #fff;
+    font-size:30px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .aboutus {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  
+    .aboutus img {
+      width: 70%;
+      margin: 10px 0 20px 0;
+    }
+  
+    .aboutus-details {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+  
+  #card-link {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

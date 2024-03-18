@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+
+/*
+    SYNE 
+  font-family: "Syne", sans-serif;
+  font-weight: <weight>;
+
+/*
+    Press start 2p
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;*/
+
+  .trending-nft {
+    text-align: center;
+    color: transparent; 
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(108,239,221,1) 27%, rgba(170,180,233,1) 37%, rgba(229,128,248,1) 68%, rgba(242,194,252,1) 87%, rgba(255,255,255,1) 99%);
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    font-size: 80px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+   
+    margin-top: 40px;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+   .trending-nft{
+    font-size: 45px;
+   }
+  }
+
+
+  
+  
+
+
+
+
