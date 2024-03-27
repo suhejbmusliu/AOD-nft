@@ -1,0 +1,128 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes slide2 {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+
+  .left-slide {
+    overflow: hidden;
+    padding: 20px;
+    white-space: nowrap;
+    position: relative;
+    float: left; /* Move the left slide to the left */
+    margin-top: 150px;
+  }
+  
+  .left-slide:before,
+  .left-slide::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .left-slide::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+  }
+  
+  .left-slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+  }
+  
+  .left-slide:hover .left-img-slide {
+    animation-play-state: paused;
+  }
+  .left-img-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+  }
+  
+  .left-img-slide img {
+    display: inline-block;
+    margin: 0 10px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  
+  .right-slide {
+    overflow: hidden;
+    padding: 20px;
+    white-space: nowrap;
+    position: relative;
+    float: right; /* Move the right slide to the right */
+    margin-bottom: 200px;
+  }
+  
+  .right-slide:before,
+  .right-slide::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .right-slide::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+  }
+  
+  .right-slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+  }
+  
+  .right-slide:hover .right-img-slide {
+    animation-play-state: paused;
+  }
+  .right-img-slide {
+    display: inline-block;
+    animation: 25s slide2 infinite linear;
+  }
+  
+  .right-img-slide img {
+    display: inline-block;
+    margin: 0 10px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  @media screen and (max-width: 768px) {
+    .left-slide::before,
+    .left-slide::after {
+      position: absolute;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+    
+    .left-slide::before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+    }
+    
+    .left-slide::after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+    }
+  }

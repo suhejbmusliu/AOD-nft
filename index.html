@@ -17,12 +17,15 @@
    <link rel="stylesheet" href="assets/videotrailer.css">
    <link rel="stylesheet" href="assets/about.css">
    <link rel="stylesheet" href="assets/cardslider.css">
+   <link rel="stylesheet" href="assets/autoslide.css">
    
 
 
 </head>
 <body>
-    
+   <div class="background-container">
+      <iframe src="https://giphy.com/embed/l1J3ThqHNWUVtZV1m" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+  </div>
         <header class="header">
           <nav class="navbar">
               <h2 class="logo">
@@ -58,18 +61,15 @@
           </section>
 
  
-
-        <section class="video-trailer">
-          <div class="video-container">
-            <video id="scroll-video" loop>
-              <source src="/video/Coming-soon.mp4" type="video/mp4">
-              
-            </video>
-          </div>
-        </section>
+         <section class="videotrailer">
+          <video controls="controls">
+            <source src="video/Coming-soon.mp4" type="video/mp4" />
+           </video>
+         </section>
 
 
-        <section class="aboutus" id="rrethnesh">
+
+        <section class="aboutus" >
           <img src="IMG/aboutbg.png" alt="aboutpng">
           <div class="aboutus-details">
               <p class="description">
@@ -77,14 +77,39 @@
                 Explicabo quia nobis officiis esse ducimus nihil. Voluptates
                  molestias cupiditate magnam dolorem fuga aspernatur distincti
                 o officiis iusto? Accusantium ipsum ut soluta cum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Minus consectetur voluptatibus id dolore, numquam expedita,
-                  quidem minima deleniti illo blanditiis nostrum 
-                  labore aliquam molestiae aperiam,
-                 laudantium voluptate quae atque! Deserunt?
+              
               </p>
           </div>
         </section>
+
+
+        <section class="img-slide">
+         <div class="left-slide">
+             <div class="left-img-slide">
+                 <img src="IMG/PandasIMG/Panda1.png" />
+                 <img src="IMG/PandasIMG/Panda2.png" />
+                 <img src="IMG/PandasIMG/Panda3.png" />
+                 <img src="IMG/PandasIMG/Panda4.png" />
+                 <img src="IMG/PandasIMG/Panda5.png" />
+                 <img src="IMG/PandasIMG/Panda6.png" />
+                 <img src="IMG/PandasIMG/Panda7.png" />
+             </div>
+         </div>
+ 
+ 
+         <div class="right-slide">
+             <div class="right-img-slide">
+                 <img src="IMG/PandasIMG/Panda8.png" />
+                 <img src="IMG/PandasIMG/Panda9.png" />
+                 <img src="IMG/PandasIMG/Panda10.png" />
+                 <img src="IMG/PandasIMG/Panda11.png" />
+                 <img src="IMG/PandasIMG/Panda1.png" />
+                 <img src="IMG/PandasIMG/Panda2.png" />
+                 <img src="IMG/PandasIMG/Panda3.png" />
+             </div>
+         </div>
+      
+     </section>
         
         <h1 class="trending-nft">PORTFOLIO</h1>
 
@@ -173,11 +198,14 @@
                   </article>
                </div>
             </div>
+
+
+
            <!-- Navigation buttons -->
            <div class="swiper-button-next">
             <i class="ri-arrow-right-s-line"></i>
          </div>
-         
+       
          <div class="swiper-button-prev">
             <i class="ri-arrow-left-s-line"></i>
          </div>
@@ -186,6 +214,10 @@
          <div class="swiper-pagination"></div>
       </section>
 
+
+      
+
+      
     
    <script src="js/swiper-bundle.min.js"></script>  
 

@@ -1,27 +1,19 @@
-/*video trailer */
+.videotrailer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
 
-.video-trailer{
-    margin-top: 10px;
+.videotrailer video{
+  width: 70%;
+  height: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .videotrailer video{
+    width: 100%;
+    padding: 0%;
   }
-  
-  .video-container {
-    height: 100vh; /* Adjust as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  video {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  @media only screen and (max-width: 768px) {
-    .video-trailer{
-      margin: 0px;
-      padding: 0px;
-    }
-  
-    .video-container{
-      height: 30vh;
-    }
-  }
+}

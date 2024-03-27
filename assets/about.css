@@ -6,6 +6,7 @@
     align-items: center;
     padding-top: 20px;
     padding: 0px;
+    margin-top: 130px;
     
   }
   
@@ -49,6 +50,9 @@
       max-width: 80%;
       height: auto;
       margin-bottom: 20px;
+    }
+    .aboutus-details p{
+      font-size: 20px;
     }
   }
   
