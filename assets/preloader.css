@@ -1,0 +1,39 @@
+#preloader {
+    background: #EF4B3A url(/IMG/pandaloader.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: opacity 0.5s, transform 0.5s; /* Add transition for smooth sliding */
+    opacity: 1; /* Start with full opacity */
+    transform: translateY(0); /* Start with no vertical translation */
+}
+
+/* Define animation to slide up and fade out */
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #preloader {
+        background-size: 70%;
+        height: 100%;
+        width: 100%;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+    }
+
+    /* Apply animation when max-width is reached */
+    #preloader.finished {
+        animation: slideUp 0.5s forwards; /* Apply slideUp animation */
+    }
+}

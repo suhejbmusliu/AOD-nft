@@ -1,27 +1,26 @@
 @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  @keyframes slide2 {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+  100% {
+    transform: translateX(-100%);
   }
-  
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
   .left-slide {
     overflow: hidden;
     padding: 20px;
     white-space: nowrap;
     position: relative;
-    float: left; /* Move the left slide to the left */
+    float: left; 
     margin-top: 150px;
   }
   
@@ -45,9 +44,6 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
   }
   
-  .left-slide:hover .left-img-slide {
-    animation-play-state: paused;
-  }
   .left-img-slide {
     display: inline-block;
     animation: 20s slide infinite linear;
@@ -66,7 +62,7 @@
     padding: 20px;
     white-space: nowrap;
     position: relative;
-    float: right; /* Move the right slide to the right */
+    float: right; 
     margin-bottom: 200px;
   }
   
@@ -90,9 +86,7 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
   }
   
-  .right-slide:hover .right-img-slide {
-    animation-play-state: paused;
-  }
+ 
   .right-img-slide {
     display: inline-block;
     animation: 25s slide2 infinite linear;
@@ -110,7 +104,18 @@
     .left-slide::after {
       position: absolute;
       top: 0;
-      width: 200px;
+      width: 80px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+
+    .right-slide:before,
+    .right-slide::after {
+      position: absolute;
+      top: 0;
+      width: 80px;
       height: 100%;
       content: "";
       z-index: 2;
@@ -125,4 +130,13 @@
       right: 0;
       background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
     }
+
+    .left-img-slide {
+      animation-duration: 7s; /* Faster animation for smaller screens */
+  }
+
+  .right-img-slide {
+      animation-duration: 7s; /* Faster animation for smaller screens */
+  }
+  
   }
