@@ -4,7 +4,7 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-   
+    
   }
   
   .richtext-container {
@@ -13,6 +13,7 @@
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 20px;
+    
   }
   
   .richtext-inner {
@@ -49,7 +50,18 @@
   @media only screen and (max-width: 600px) {
 
     .heading{
-        font-size: 70px;
+        font-size: 40px;
+    }
+    .richtext-container{
+      width: 370px;
+      height: 200px;
     }
 
+    .richtext-description{
+      font-size: 10px;
+    }
+
+    .richtext-section{
+      height: 100px;
+    }
   }
