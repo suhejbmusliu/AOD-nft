@@ -27,32 +27,50 @@
     },
   });
 
- 
+  /*=============== PRE LOADER ===============*/
   var loader = document.getElementById("preloader");
 
-  // Show the preloader when the window loads
+  
   window.addEventListener("load", function(){
-      // Display the preloader
+      
       loader.style.display = "block";
   
-      // Function to hide the preloader
+      
       function hidePreloader() {
-          loader.style.opacity = 0; // Fade out the preloader
+          loader.style.opacity = 0; 
           setTimeout(function() {
-              loader.style.display = "none"; // Hide the preloader after fading out
-          }, 500); // Fading duration (0.5 seconds)
+              loader.style.display = "none"; 
+          }, 500); 
       }
   
-      // Hide the preloader after animation finishes
+      
       loader.addEventListener("animationend", function(event) {
           if (event.animationName === "slideUp") {
               hidePreloader();
           }
       });
   
-      // Fallback for browsers that do not support CSS animations
+      
       setTimeout(function() {
           hidePreloader();
-      }, 4500); // Fallback timeout (slightly longer than animation duration)
+      }, 4500); 
   });
+
+  
+  /*=============== REVEAL ===============*/
+
+  window.addEventListener("scroll", reveal);
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+  
+      if (revealtop < windowheight - revealpoint) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
   

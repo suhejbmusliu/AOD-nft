@@ -1,11 +1,11 @@
  /* Navbar */
  .header {
-    
+    margin: 0px;
     top: 0;
     left: 0;
     width: 100%;
     font-family: "Syne", sans-serif;
-    
+    z-index: 9999;
   }
   
   .navbar {
@@ -98,7 +98,9 @@
       position: fixed;
       background-color: #000000;
       z-index: 9999;
+      width: 100%;
     }
+   
     
     .navbar .logo a {
       font-size: 1.5rem;

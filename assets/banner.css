@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cute+Font&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Syne:wght@400..800&display=swap");
+
+
 /*Banner style*/
 
 .Banner{
@@ -36,4 +39,52 @@
     }
 
   }
+.richtext-section {
+  position: relative;
+  z-index: 9;
+  background-color: black;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+.richtext-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 20px;
+}
+
+.richtext-inner {
+  text-align: center;
+  padding: 60px 0; 
+}
+
+.heading {
+  font-size: 90px;
+  margin-bottom: 0px; 
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.heading span {
+  font-size: 38px;
+}
+
+.richtext-description {
+  font-size: 18px;
+  color: #333;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5; 
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px; 
+}
 
