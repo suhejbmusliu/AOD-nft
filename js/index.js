@@ -74,3 +74,28 @@
     }
   }
   
+    // Smooth scrolling when clicking on navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+              // Get the height of the fixed header (if any)
+              const headerHeight = document.querySelector('.header').offsetHeight;
+              
+              // Scroll to the target section with an offset to fit properly
+              window.scrollTo({
+                  top: target.offsetTop - headerHeight,
+                  behavior: 'smooth'
+              });
+          }
+
+          // Check if the menu toggle checkbox is checked (menu is open)
+          const menuToggle = document.getElementById('menu-toggle');
+          if (menuToggle.checked) {
+              // Uncheck the menu toggle checkbox to close the menu
+              menuToggle.checked = false;
+          }
+      });
+  });
