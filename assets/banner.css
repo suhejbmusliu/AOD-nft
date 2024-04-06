@@ -1,90 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Cute+Font&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Syne:wght@400..800&display=swap");
 
 
+.linebanner{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 270px;
+}
+
 /*Banner style*/
 
 .Banner{
-  margin-top: 190px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
 }
 .Banner h1{
     text-align: center;
-    font-size: 90px;
-    font-family: "Syne", sans-serif;
-    font-weight: 800;
+    font-size: 100px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #fff;
-    
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
   }
 
-  .Banner p{
-    text-align: center;
-    color: #fff;
-    font-family: "Syne", sans-serif;
-    font-weight: 800;
-    font-size: 25px;
+  .Banner img{
+    display: block;
+    width: 1500px;
+    margin: 0px auto;
+    
+  }
+
+  .Banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Adjust the height of the gradient overlay as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)); 
+}
+
+
+/* Adjustments for small screens */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .Banner h1{
+    font-size: 70px;
+    margin-top: 150px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .Banner h1{
+    font-size: 70px;
+    margin-top: 150px;
+  }
+  
+}
+
+/* Styles for large screens (portrait and landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Banner h1{
+    font-size: 70px;
+    margin-top: 150px;
+  }
+  .linebanner{
     margin-top: 2px;
   }
-
-
-  @media only screen and (max-width: 600px) {
-
-    .Banner h1{
-      font-size: 30px;
-      margin-top: 170px;
-    }
-
-    .Banner p {
-      font-size: 15px;
-      padding: 0px 20px 0px 20px;
-    }
-
-  }
-.richtext-section {
-  position: relative;
-  z-index: 9;
-  background-color: black;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
 }
-
-.richtext-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  padding: 20px;
-}
-
-.richtext-inner {
-  text-align: center;
-  padding: 60px 0; 
-}
-
-.heading {
-  font-size: 90px;
-  margin-bottom: 0px; 
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-}
-
-.heading span {
-  font-size: 38px;
-}
-
-.richtext-description {
-  font-size: 18px;
-  color: #333;
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5; 
-  max-width: 600px;
-  margin: 0 auto; 
-  padding: 20px; 
-}
-

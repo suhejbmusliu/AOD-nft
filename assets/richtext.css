@@ -1,53 +1,54 @@
 .richtext-section {
-    background-color: black;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .richtext-container {
-    width: 1300px;
-    margin: 0 auto;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding: 20px;
-    
-  }
-  
-  .richtext-inner {
-    text-align: center;
-    padding: 60px 0; 
-  }
-  
-  .heading {
-    font-size: 90px;
-    margin-bottom: 0px; 
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffffff;
-  }
-  
-  .heading span {
-    font-size: 38px;
-  }
-  
-  .richtext-description {
-    font-size: 18px;
-    color: #8a8a8a;
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5; 
-    max-width: 600px;
-    margin: 0 auto; 
-    padding: 20px; 
-  }
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: 100vh; 
+}
+
+.richtext-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 20px;
+}
+
+.richtext-inner {
+  text-align: center;
+  padding: 60px 0; 
+}
+
+.heading {
+  font-size: 90px;
+  margin-bottom: 0px; 
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.heading span {
+  font-size: 38px;
+}
+
+.richtext-description {
+  font-size: 18px;
+  color: #7a7a7a;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5; 
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px; 
+}
 
 
-  @media only screen and (max-width: 600px) {
+
+
+ @media only screen and (max-width: 600px) {
 
     .heading{
         font-size: 40px;
@@ -58,10 +59,39 @@
     }
 
     .richtext-description{
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .richtext-section{
-      height: 100px;
+      height: 500px;
     }
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .heading{
+      font-size: 80px;
+  }
+  .richtext-container{
+    width: 500px;
+    height: 200px;
+  }
+
+  .richtext-description{
+    font-size: 20px;
+  }
+  .richtext-section{
+    height: 900px;
+  }
+  }
+
+
+/* Your CSS styles for small phones go here */
+@media only screen and (max-width: 480px){
+  .richtext-container {
+    width: 300px;
+    padding: 20px;
+    
+  }
+
+  
+}

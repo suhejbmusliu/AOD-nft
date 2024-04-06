@@ -1,0 +1,26 @@
+/* Default styles for all screen sizes */
+
+/* Styles for extra small screens (portrait phones) */
+@media only screen and (max-width: 320px) {
+  /* Adjustments for extra small screens */
+}
+
+/* Styles for small screens (landscape phones) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  /* Adjustments for small screens */
+}
+
+/* Styles for medium screens (portrait and landscape tablets) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Adjustments for medium screens */
+}
+
+/* Styles for large screens (portrait and landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Adjustments for large screens */
+}
+
+/* Styles for extra large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Adjustments for extra large screens */
+}

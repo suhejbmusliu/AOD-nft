@@ -25,18 +25,33 @@
     height: 400px;
     padding: 20px;
     border-radius: 15px;
-    font-family: "Syne", sans-serif;
+    font-family: "Silkscreen", sans-serif;
     font-weight: 400;
+    font-style: normal;
+    
   }
   
   
   .aboutus-details p {
-    color: #fff;
+    color: #7a7a7a;
     font-size:30px;
   }
+
+    /* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .aboutus img{
+    width: 300px;
+  }
+
+  .aboutus-details p{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 175px;
+  }
+}
   
   /* Responsive Styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .aboutus {
       flex-direction: column;
       text-align: center;

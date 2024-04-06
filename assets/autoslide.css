@@ -15,6 +15,12 @@
   }
 }
 
+  .img-slide{
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
   .left-slide {
     overflow: hidden;
     padding: 20px;
@@ -132,11 +138,34 @@
     }
 
     .left-img-slide {
-      animation-duration: 7s; /* Faster animation for smaller screens */
+      animation-duration: 7s; 
   }
 
-  .right-img-slide {
-      animation-duration: 7s; /* Faster animation for smaller screens */
-  }
+    .right-img-slide {
+        animation-duration: 7s; 
+    }
   
   }
+
+
+  /* Your CSS styles for small phones go here */
+@media only screen and (max-width: 480px){
+  .left-slide,
+  .right-slide {
+    padding: 0; /* Remove padding for smaller devices */
+  }
+
+  .left-img-slide img,
+  .right-img-slide img {
+    margin: 0 5px; /* Adjust margin for smaller devices */
+    height: 150px; /* Adjust image height for smaller devices */
+  }
+
+  .left-slide::before,
+  .left-slide::after,
+  .right-slide::before,
+  .right-slide::after {
+    width: 20px; /* Further reduce width for smaller devices */
+  }
+
+}

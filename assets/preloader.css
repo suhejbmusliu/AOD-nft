@@ -37,3 +37,15 @@
         animation: slideUp 0.5s forwards; /* Apply slideUp animation */
     }
 }
+
+
+@media only screen and (max-device-width: 736px) and (orientation: landscape){
+    #preloader {
+        background-size: 50%;
+        height: 100%;
+        width: 100%;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+    }
+}
