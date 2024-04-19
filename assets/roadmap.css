@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cute+Font&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline-roadmap {
+  position: relative;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.container-roadmap {
+  padding: 10px 50px;
+  position: relative;
+  width: 35%;
+  color: #fff;
+}
+
+.text-box {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+
+.left-container {
+  left: 10%;
+}
+
+.right-container {
+  left: 55%;
+}
+
+.timeline-roadmap::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 194px;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.text-box h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+}
+.text-box p {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 20px;
+}
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: -15px;
+}
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -15px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-roadmap {
+    margin: 50px auto;
+  }
+  .timeline-roadmap::after {
+    left: 31px;
+    height: 230px;
+  }
+  .container-roadmap {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .left-container {
+    left: 0;
+  }
+  .right-container {
+    left: 0;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline-roadmap::after {
+    height: 300px;
+  }
+}

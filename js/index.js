@@ -53,7 +53,7 @@
       
       setTimeout(function() {
           hidePreloader();
-      }, 4500); 
+      }, 3000); 
   });
 
   
